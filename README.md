@@ -12,3 +12,8 @@ messaging.usePublicVapidKey("BKagOny0KF_2pCJQ3m....moL0ewzQ8rZu");
 8. 为客户端应用订阅主题, 批量为token 划分主题  https://iid.googleapis.com/iid/v1/<REGISTRATION_TOKEN>/rel/topics/<TOPIC_NAME>
 具体见： https://developers.google.com/instance-id/reference/server?authuser=0#create_relationship_maps_for_app_instances
 admin.messaging().subscribeToTopic 也可以管理主题。
+
+9. webpush 相对于CloudMessaging 没有强大的功能， 简单的推送，
+10. navigator.serviceWorker.ready 订阅用户
+从 服务器 获取publickey ，pushManager 生成订阅文件， 发送到服务器，
+11. sw 监听 push， 监听点击 notificationclick 
